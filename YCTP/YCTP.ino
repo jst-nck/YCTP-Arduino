@@ -110,7 +110,7 @@ void loop() {
 
 // question generation
 void generateQuestion(){
-  randomSeed(5); // seed for randomization (A0 STAYS DISCONNECTED!!!)analogRead(0)
+  randomSeed(analogRead(0)); // seed for randomization (A0 STAYS DISCONNECTED!!!)
 
   num1 = random(0,10);
   num2 = random(0,10);
